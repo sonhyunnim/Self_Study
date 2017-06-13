@@ -97,6 +97,6 @@ jspm_packages /
 ! .vscode / extensions.json
 
 # index.html
-./javascript/index.html
+javascript/index.html
 
 # End of https://www.gitignore.io/api/node,macos,visualstudiocode
