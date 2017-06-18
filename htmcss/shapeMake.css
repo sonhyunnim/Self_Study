@@ -1,0 +1,78 @@
+/* nuli.navercorp.com css로 도형만들기 */
+
+/* 삼각형 : css에서 transparent 속성 사용 */
+/* IE7 이상의 브라우저 지원 */
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid darkblue;
+}
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkcyan;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkblue;
+}
+
+/* 사다리꼴  css에서 transparent 속성 사용 */
+/* IE7 이상의 브라우저 지원 */
+.trapezoid {
+    width: 100px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid greenyellow;
+}
+
+/* 원 : css3에 새로 추가된 border-redius속성 사용 */
+/* IE9 이상의 브라우저 지원 */
+.circle {
+    width: 100px;
+    height: 100px;
+    background: palevioletred;
+    border-radius: 50%;  
+}
+
+/* 평행 사변형 : css3에 새로 추가된 transform:skew 속성을 사용 */
+/* IE9 이상의 브라우저 지원 */
+.parallelogram {
+    width: 150px;
+    height: 100px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    background: orange;
+}
+
+/* 육각형 별 : 가상컨텐츠를 사용 */
+/* IE8 이상의 브라우저 지원 */
+.star-six {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow;
+    position: relative;
+}
+.star-six:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid yellow;
+    position: absolute;
+    content: ""; top: 30px; left: -50px;
+}
+
+
+
+
+
